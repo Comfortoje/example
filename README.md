@@ -90,7 +90,7 @@ The fastqc report  indicates the presence of an overrepresented sequence and fas
 * Download picard.jar in your working folder from *[here](https://github.com/broadinstitute/picard/releases/download/2.26.0/picard.jar) 
 * From that directory, run `java -jar picard.jar -h` to check whether it works *(you can skip this step*)
 * For sorting the output file from last step use- `samtools sort -T temp -O bam -o filtered_output_sorted.bam Filtered_output.bam`
-* Finally, run *java -jar picard.jar MarkDuplicates I=filtered_output_sorted.bam O=marked_dup.bam M=marked_dup.metrics.txt`  for marking duplicates      
+* Finally, run `java -jar picard.jar MarkDuplicates I=filtered_output_sorted.bam O=marked_dup.bam M=marked_dup.metrics.txt`  for marking duplicates      
 * If you can have a look into the metrics in the metrics.txt file  
 
 ## **Check Insert Sizes**
